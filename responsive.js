@@ -41,7 +41,7 @@ class Responsive {
             this._parentEl.style.gridTemplateColumns = `repeat(2, auto)`;
         }
 
-        if(this.ScreenWidth() < 800) {
+        if(this.ScreenWidth() < 767) {
             this._parentEl.style.gridTemplateColumns = `100%`;
         }
     }
