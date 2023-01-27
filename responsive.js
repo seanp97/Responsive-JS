@@ -20,26 +20,20 @@ class Responsive {
                 if(i > 2 && i <= 8) {
                     this._gridOptions.push(i);
                 }
-                else {
-                    this._gridOptions.push(4, 8);
-                }
             }
 
             if(this._childrenLength % i != 0) {
                 if(i > 2 && i <= 8) {
                     this._gridOptions.push(i);
                 }
-                else {
-                    this._gridOptions.push(3, 5);
-                }
             }
         }
         
-        if(this.ScreenWidth() >= 1100) {
+        if(this.ScreenWidth() >= 1300) {
             this._parentEl.style.gridTemplateColumns = `repeat(${this._gridOptions[this._gridOptions.length - 1]}, auto)`;
         }
 
-        if(this.ScreenWidth() < 1099) {
+        if(this.ScreenWidth() < 1299) {
             this._parentEl.style.gridTemplateColumns = `repeat(${this._gridOptions[0]}, auto)`;
         }
 
