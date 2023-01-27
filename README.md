@@ -2,6 +2,10 @@ Dynamically resize elements with this lightweight library
 
 ---------------------------------------------------------
 
+See codepen...
+
+https://codepen.io/seanp97/pen/WNKyKWO
+
 To use...
 
 const resp = new Responsive('.grid-wrapper', 15);
